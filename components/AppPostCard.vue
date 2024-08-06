@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="post-card" to="/">
+  <NuxtLink class="post-card" :to="`/post/${data.id}`">
     <img class="post-card__img" :src="data.image"/>
     <span class="post-card__text">
       {{ data.preview }}

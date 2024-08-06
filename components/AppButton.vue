@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 interface Props {
-  variant: string,
+  variant?: string,
 }
 
 const props = defineProps<Props>();
