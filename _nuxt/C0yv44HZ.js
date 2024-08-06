@@ -1,0 +1,1 @@
+import{q as n,s as c,c as r,a as s,t as i,v as l,a1 as p,o as _,_ as d}from"./eJjNKtGo.js";const f={class:"main"},m={class:"container"},u=n({__name:"post",props:{title:{}},setup(t){const e=t,{title:o}=c(e);return(a,h)=>(_(),r("main",f,[s("div",m,[s("h1",null,i(l(o)),1),p(a.$slots,"default",{},void 0)])]))}}),B=d(u,[["__scopeId","data-v-3d4bce9f"]]);export{B as default};
