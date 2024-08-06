@@ -5,8 +5,12 @@
 </template>
 
 <script setup lang="ts">
+const VARIANTS = ['uk', 'triangle'] as const;
+
+type Variants = typeof VARIANTS[number];
+
 interface Props {
-  variant?: string,
+  variant?: Variants,
 }
 
 const props = defineProps<Props>();

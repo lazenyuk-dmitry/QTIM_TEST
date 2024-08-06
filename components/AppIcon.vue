@@ -3,8 +3,11 @@
 </template>
 
 <script setup lang="ts">
+const ICONS = ['uk', 'triangle'] as const;
+
+type Icons = typeof ICONS[number];
 interface Props {
-  icon: string,
+  icon: Icons,
 }
 
 const props = defineProps<Props>();
