@@ -1,11 +1,16 @@
 <template>
-  <button class="button" type="button" v-on="$listeners">
+  <button :class="['button', variant]" type="button" v-on="$listeners">
     <slot />
   </button>
 </template>
 
-<script setup>
+<script setup lang="ts">
+interface Props {
+  variant: string,
+}
 
+const props = defineProps<Props>();
+const { variant } = toRefs(props);
 </script>
 
 <style lang="scss" scoped>
@@ -25,5 +30,12 @@
   line-height: 1;
   text-align: center;
   color: #fff;
+
+  &.circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    padding: 5px;
+  }
 }
 </style>

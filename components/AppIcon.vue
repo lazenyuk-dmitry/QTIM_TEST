@@ -23,5 +23,10 @@ const { icon } = toRefs(props);
     width: 24px;
     background-image: url("~/assets/icons/united_kingdom.svg");
   }
+  &.triangle {
+    height: 9px;
+    width: 9px;
+    background-image: url("~/assets/icons/triangle.svg");
+  }
 }
 </style>
