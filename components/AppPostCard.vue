@@ -11,15 +11,10 @@
 </template>
 
 <script setup lang="ts">
+import type { PostData } from "@/models/post.ts";
+
 interface Props {
-  data: {
-    createdAt: string,
-    description: string,
-    id: string,
-    image: string,
-    preview: string,
-    title: string,
-  },
+  data: PostData,
 }
 
 const props = defineProps<Props>();

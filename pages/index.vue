@@ -8,8 +8,10 @@
   </NuxtLayout>
 </template>
 
-<script setup>
-const { data: posts } = await useFetch('https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/');
+<script setup lang="ts">
+import type { PostData } from "@/models/post.ts";
+
+const { data: posts } = await useFetch<PostData[]>('https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/');
 </script>
 
 <style lang="scss" scoped>

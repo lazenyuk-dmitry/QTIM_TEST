@@ -10,16 +10,14 @@
 </template>
 
 <script setup lang="ts">
+import type { PostData } from "@/models/post.ts";
+
 const route = useRoute();
 const id = route.params.id;
-const { data: post } = await useFetch(`https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/${id}`);
+const { data: post } = await useFetch<PostData>(`https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/${id}`);
 </script>
 
 <style lang="scss" scoped>
-.post {
-  padding-bottom: 80px !important;
-}
-
 .post__img {
   display: block;
   width: 100%;
